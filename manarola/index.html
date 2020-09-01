@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Playfair+Display&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="container">
+<!--  Header Menu principal -->
+    <header class="header">
+        <div class="logo"><img src="img/logo.svg" alt=""></div>
+        <nav class="nav-menu">
+            <ul class="menu-list">
+                <li class="menu--item drop" onclick="showMenu()">Destinations</li>
+                    
+                <li class="menu--item"><a href="#">Bookings</a></li>
+                <li class="menu--item"><a href="#">Gallery</a></li>
+                <li class="menu--item"><a href="#">Find a tour</a></li>
+            </ul>
+        </nav>
+        <!--  Este es el submenu izquierda desplegable  -->
+        <nav class="nav-submenu" id="menuOculto">
+            <ol class="submenu-list">
+                <li class="submenu-item">
+                    <article class="submenu-article">
+                        <span class="submenu--number">01.</span>
+                        <span class="submenu--title">Province La Specia</span>
+                        <p class="submenu--description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </article>
+                </li>
+                <li class="submenu--item">
+                    <article class="submenu-article">
+                        <span class="submenu--number">02.</span>
+                        <span class="submenu--title">Province La Specia</span>
+                        <p class="submenu--description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                 </article>
+                </li>
+             <li class="submenu--item">
+                    <article class="submenu-article">
+                        <span class="submenu--number">03.</span>
+                        <span class="submenu--title">Province La Specia</span>
+                        <p class="submenu--description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                 </article>
+                </li>
+                <li class="submenu--item">
+                    <article class="submenu-article">
+                        <span class="submenu--number">04.</span>
+                        <span class="submenu--title">Province La Specia</span>
+                        <p class="submenu--description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </article>
+                </li>
+            </ol>
+        </nav>
+    </header>
+<!--  Contenido principal -->
+    <main class="main">
+        <section class="section-italy">
+            <div class="italy-titles"> 
+                <h1 class="italy--h1">Manarola</h1>
+                <h2 class="italy--h2">Italy</h2>
+            </div>
+            <span class="italy--search">
+                <button class="btn-lupa">
+                    <img class="icon-search" src="img/lupa-icon.svg" alt="">
+                </button>
+                <input type="text" placeholder="Find a tour" class="input-search">
+            </span>
+        </section>
+    </main>
+
+       
+    
+    <footer class="footer">
+        <p>2019 Tours</p>
+        
+    </footer>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>

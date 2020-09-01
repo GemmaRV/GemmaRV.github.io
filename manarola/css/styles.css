@@ -1,0 +1,219 @@
+@import "reset.css";
+
+body{
+    background-image: url(../img/manarola-2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.container{
+    width: 80%;
+    height: 80vh;
+    min-width: 780px;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    
+    
+    
+}
+.header{
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 2rem;
+}
+.logo{
+    width: 6rem;
+    height: auto;
+}
+
+
+.menu-list{
+    display: flex;
+    flex-direction: row;
+
+    position: relative;
+}
+.menu-list:before{
+    content: " ";
+    width: 100%;
+    height: 2px;
+
+    background: white;
+
+    position: absolute;
+    top: 1.7rem;
+}
+.menu--item{
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    font-weight: 700;
+
+    position: relative;
+}
+.menu--item:last-child{
+    margin-right: 0;
+}
+.menu--item:first-child{
+    margin-left: 0;
+}
+.menu--item::before{
+    content: " ";
+    width: 10px;
+    height: 10px;
+
+    background: white;
+    border-radius: 100%;
+
+    position: absolute;
+    top: 1.5rem;
+    left: 50%;
+}
+.main{
+    padding-top: 2rem;
+    height: 75vh;
+}
+.section-italy{
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+.italy--h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: right;
+}
+.italy--h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 12rem;
+    margin-bottom: 2.5rem;
+}
+.italy--search{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    position: relative;
+
+}
+.italy--search:after{
+    content: " ";
+    width: 100%;
+    height: 2px;
+
+    background: white;
+
+    position: absolute;
+    top: 3rem;
+}
+.icon-search{
+    width: 40px;
+    margin-right: 1rem;
+}
+.nav-submenu{
+    min-width: 25%;
+    max-width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background: rgba(10, 8, 126, 0.404);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+
+}
+.nav-submenu-visible{
+    visibility: visible;
+}
+.submenu-list{
+    display: flex;
+    flex-direction: column;
+    
+}
+.submenu-article{
+    font-weight: 700;
+    padding: 2rem 5rem;
+}
+
+.submenu--number{
+    margin-right: 1rem;
+
+}
+.submenu--title{
+    position: relative;
+}
+.submenu--title::after{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: white;
+
+    position: absolute;
+    top: 1.2rem;
+    left: 0;
+}
+.submenu--description{
+    font-weight: normal;
+    margin-left: 2.6rem;
+    margin-top: .75rem;
+}
+.submenu-article:hover{
+    background: rgba(26, 4, 87, 0.459);
+    font-size: 2rem;
+}
+.submenu-article:hover .submenu--title::after{
+    top: 2.2rem;
+    height: 2px;
+}
+.submenu-article:hover .submenu--description{
+    margin-left: 4rem;
+}
+.menu--item a:hover, .menu--item:hover{
+    color: rgb(255, 178, 107);
+}
+.menu--item:hover::before{
+    background: rgb(255, 178, 107);
+}
+
+.btn-lupa{
+ background: none;
+ border: none;
+}
+.btn-lupa:hover{
+    cursor: pointer;
+
+}
+.input-search{
+    background: none;
+    border: none;
+    color: #fff;
+    padding: 1rem;
+    font-size: 1.2rem;
+    
+}
+.input-search::placeholder{
+    color: #fff;
+    font-size: 1.2rem;
+}
+.input-search:focus, .btn-lupa:focus{
+    outline: none;
+}

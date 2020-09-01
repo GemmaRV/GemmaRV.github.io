@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To Do List</title>
+</head>
+<body class="wrapper">
+    <section class="section-stars">
+        
+        <div class="section-stars__content-title">
+            <h1 class="section-stars__content-title--title"> ¿Tienes cosas que hacer? </h1> 
+        </div>
+        <div class="section-stars__content-follow">
+            <p class="section-stars__content-follow--text">Comienza tu lista</p> 
+        </div>
+    </section>
+    <section class="section-to-do hide">
+        <p class="section-to-do__title">¡Crea tu propia lista!</p>
+            <p class="section-to-do__title">Escribe aquí todo lo que debas recordar</p>
+        <fieldset class="section-to-do__form">
+            <input type="text" id="dreams" class="section-to-do__input" placeholder="Pasear a los peces" maxlength="40">
+            <button class="section-to-do__btn">Añadir</button>
+        </fieldset>        
+        <ul class="section-to-do__list"> </ul>
+        <div class="section-to-do__content-msg">
+            <p class="section-to-do__content-msg--msg">Escribe una tarea y pulsa añadir</p>
+            <a class="section-to-do__content-msg--close">&times;</a>
+        </div>
+    </section>
+    <script type="text/javascript " src="main.js"></script>
+</body>
+</html>
